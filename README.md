@@ -19,3 +19,13 @@ ten_minute_walk?(['w', 's']) # => false
 
 Walk must take 10 mins and return to starting point
 each block takes 1 min to walk, so length of array must be exactly 10 or it will return false.
+
+need to make sure that no matter the path you take you always return back to starting point
+Im thinking of using some type of number system to keep track, maybe a x-y axis both starting at 0-0
+x = 0
+y = 0
+n = y + 1
+e = x + 1
+s = y - 1
+w = x - 1
+if array is 10 long and x === 0 && y === 0 then we should get true back, anything else will be false
