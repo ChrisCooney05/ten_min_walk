@@ -4,14 +4,19 @@ function tenMinuteWalk(array) {
     let y = 0;
 
     array.forEach((l) => {
-      if (l === "n") {
-        y += 1;
-      } else if (l === "e") {
-        x += 1;
-      } else if (l === "s") {
-        y -= 1;
-      } else {
-        x -= 1;
+      switch (l) {
+        case "n":
+          y += 1;
+          break;
+        case "e":
+          x += 1;
+          break;
+        case "s":
+          y -= 1;
+          break;
+        case "w":
+          x -= 1;
+          break;
       }
     });
 

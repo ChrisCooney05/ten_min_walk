@@ -15,6 +15,9 @@ describe("tenMinuteWalk", () => {
     expect(
       tenMinuteWalk(["w", "s", "e", "e", "n", "n", "e", "s", "w", "w"])
     ).toEqual(true);
+  });
+
+  test("It should return false if we dont get x == 0 && y === 0", () => {
     expect(
       tenMinuteWalk(["w", "s", "e", "n", "n", "e", "s", "w", "w", "w"])
     ).toEqual(false);
